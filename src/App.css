@@ -1,0 +1,29 @@
+
+
+.palette-section {
+  max-width: 800px;
+  margin: 40px auto;
+  min-height: calc(100vh - 100px);
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  background: -webkit-linear-gradient(#a35353, #2fe9d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+

@@ -1,0 +1,51 @@
+
+.color {
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.color-light {
+    color: #fff;
+}
+
+article {
+  position: relative;
+}
+
+.copy {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 1rem;
+  
+}
+.copy-light {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 1.3rem;
+}
+
+
+.copy:hover {
+  transform: scale(1.2);
+}
+
+article:hover > .copy {
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+
+article:hover > .copy-light {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+}

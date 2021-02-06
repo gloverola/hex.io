@@ -1,50 +1,51 @@
-import React, {useState} from 'react'
-import Values from 'values.js';
+import React, { useState } from "react";
+import Values from "values.js";
+import "./App.css";
 
 // Import color components
-import SingleColor from './components/SingleColor';
+import Header from "./components/header/Header";
+import Palette from "./components/palette/Palette";
 
 const App = () => {
-
-  const [color, setColor] = useState('');
+  const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState(new Values('#f15025').all(10));
+  const [range, setRange] = useState(5);
+  const [list, setList] = useState(new Values("#f15025").all(range));
 
   //Submit inputed color
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      let colors = new Values(color).all(10);
-      console.log(colors);
-      setList(colors)
+      let colors = new Values(color).all(range);
+      setList(colors);
     } catch (error) {
       setError(true);
       console.log(error);
     }
-  }
+  };
 
   return (
-    <>
-      <section>
-        <form onSubmit={handleSubmit}>
-          <input
-            type='text'
-            value={color}
-            onChange={(e) => setColor(e.target.value)}
-            placeholder='#f15025'
-            error={error}
-          />
+    <div className='app'>
+      <Header
+        color={color}
+        setColor={setColor}
+        error={error}
+        range={range}
+        setRange={setRange}
+        handleSubmit={handleSubmit}
+      />
 
-          <button type='submit'>Submit</button>
-          {error && <h2>Cant pass wrong value</h2>}
-        </form>
-        <input type='color' />
-      </section>
+      <div className="title">
+        <h2>Hex Color variants for Designers and Artists</h2>
+        <p>
+          Hex.io is a free and open source platform for developers to instantly get variants of hex colors
+        </p>
+      </div>
 
-      <section>
+      <div className='palette-section'>
         {list.map((color, index) => {
           return (
-            <SingleColor
+            <Palette
               key={index}
               {...color}
               index={index}
@@ -52,9 +53,9 @@ const App = () => {
             />
           );
         })}
-      </section>
-    </>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
