@@ -6,6 +6,7 @@ import "./palette.css";
 
 const Palette = ({ rgb, index, hexColor }) => {
   const [alert, setAlert] = useState(false);
+  
 
   // Set rgb value to be inputed
   const color = rgb.join(",");
@@ -41,7 +42,8 @@ const Palette = ({ rgb, index, hexColor }) => {
   }, [alert]);
 
   return (
-   
+    <>
+      
       <article
         className={`color ${index > 10 && "color-light"}`}
         style={{
@@ -51,8 +53,12 @@ const Palette = ({ rgb, index, hexColor }) => {
         }}
       >
         <p>{hexValue}</p>
-        <IoIosCopy className={`copy ${index > 10 && "copy-light"}`} onClick={copyToClipboard} />
+        <IoIosCopy
+          className={`copy ${index > 10 && "copy-light"}`}
+          onClick={copyToClipboard}
+        />
       </article>
+    </>
   );
 };
 

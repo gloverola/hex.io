@@ -19,6 +19,12 @@
   margin-top: 80px;
 }
 
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 h2 {
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;

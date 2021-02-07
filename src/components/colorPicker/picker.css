@@ -1,0 +1,28 @@
+.picker {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: .3rem;
+    font-weight: bold;
+    color: #d7d7d7;
+}
+
+.picker-button {
+    padding: .6rem 4.8rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #c2f0fc;
+    color: #1f7c93;
+    cursor: pointer;
+}
+
+.picker-container {
+    position: fixed;
+    top: 160px;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
