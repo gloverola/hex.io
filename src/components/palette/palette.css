@@ -22,7 +22,7 @@ article {
   position: absolute;
   right: 10px;
   top: 20px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   
 }
 .copy-light {
@@ -40,7 +40,7 @@ article {
 
 article:hover > .copy {
   display: block;
-  color: #000;
+  color: #535353;
   cursor: pointer;
 }
 

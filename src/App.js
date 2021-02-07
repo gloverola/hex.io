@@ -18,6 +18,7 @@ const App = () => {
     try {
       let colors = new Values(color).all(range);
       setList(colors);
+      setError(false);
     } catch (error) {
       setError(true);
       console.log(error);

@@ -1,7 +1,10 @@
 import React from "react";
 import "./header.css";
+import { AiFillGithub } from "react-icons/ai";
 
-const Header = ({ color, handleSubmit, error, setColor}) => {
+const Header = ({ color, handleSubmit, error, setColor }) => {
+
+  
   return (
     <header className='header'>
       <h3 className='logo'>hex.io</h3>
@@ -18,8 +21,19 @@ const Header = ({ color, handleSubmit, error, setColor}) => {
           />
 
           <button type='submit'>Submit</button>
-          {error && <h2>Cant pass wrong value</h2>}
+         
         </form>
+      </div>
+      <div className='external-links'>
+        <a
+          href='https://github.com/gloverola/hex.io'
+          target='\_blank'
+          noopener
+          noreferrer
+          className='github'
+        >
+          <AiFillGithub />
+        </a>
       </div>
     </header>
   );

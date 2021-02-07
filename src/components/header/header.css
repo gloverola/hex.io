@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 20;
 }
 
 .logo {
@@ -47,20 +50,42 @@ color: #fff;
 }
 
 .error {
-background: #34cef5;
+background: #727272;
   width: 200px;
-  border: 1px solid rgb(231, 26, 26);
-  border-radius: 5px;
+  border: none;
   outline: none;
   padding: 7px;
+  color: #fff;
+  margin-left: 40px;
+  outline: 1px solid red;
 }
 
 button {
     padding: 8px 10px;
     font-size: .7rem;
+    font-weight: bold;
     background: #c2f0fc;
     color: #1f7c93;
     cursor: pointer;
     border: none;
+    outline: none;
     margin-left: 5px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+  color: #c2f0fc;
+  background: #1f7c93;
+}
+
+.external-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
 }
