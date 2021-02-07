@@ -23,6 +23,7 @@ const App = () => {
     try {
       let colors = new Values(color || pickerColor).all(range);
       setList(colors);
+      setColor('');
       setError(false);
     } catch (error) {
       setError(true);
