@@ -3,7 +3,7 @@ Hex.io is a free and open source application for developers to instantly get var
 
 ## Demo
 A demo of this application exists already, you can try it out [here](https://hexio.netlify.app/ "Link to hex.io")
-[![Demo](https://i.imgur.com/vKb2F1B.png)](https://res.cloudinary.com/dcd1lhe7x/video/upload/v1612694785/hex_pffujc.mov)
+[![Demo](https://imgur.com/1E5wg0o)
 
 ## Technology
 This application is built using ReactJS.
