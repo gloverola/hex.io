@@ -10,7 +10,7 @@ const App = () => {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
   const [range, setRange] = useState(5);
-  const [list, setList] = useState(new Values("#f15025").all(range));
+  const [list, setList] = useState(new Values("#259ff1").all(range));
 
   //Submit inputed color
   const handleSubmit = (e) => {
@@ -21,7 +21,6 @@ const App = () => {
       setError(false);
     } catch (error) {
       setError(true);
-      console.log(error);
     }
   };
 

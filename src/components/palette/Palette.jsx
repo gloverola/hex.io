@@ -4,11 +4,13 @@ import {IoIosCopy} from 'react-icons/io'
 import "react-toastify/dist/ReactToastify.css";
 import "./palette.css";
 
-const Palette = ({ rgb, weight, index, hexColor }) => {
+const Palette = ({ rgb, index, hexColor }) => {
   const [alert, setAlert] = useState(false);
 
+  // Set rgb value to be inputed
   const color = rgb.join(",");
 
+  // Set hex value
   const hexValue = `#${hexColor}`;
 
   toast.configure()
@@ -30,7 +32,7 @@ const Palette = ({ rgb, weight, index, hexColor }) => {
     
   };
 
-  // Set timeout for pop after copying to clipboard
+  // Set timeout for pop-up after copying to clipboard
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAlert(false);

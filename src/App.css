@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .palette-section {
   max-width: 800px;
@@ -21,9 +21,15 @@
 
 h2 {
   font-size: 2rem;
-  background: -webkit-linear-gradient(#a35353, #2fe9d0);
+  font-family: 'Roboto', sans-serif;
+  background: -webkit-linear-gradient(#f3f4f5, #259ff1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
